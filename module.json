@@ -17,5 +17,6 @@
     ],
     "systems": ["sfrpg"],
     "url": "https://github.com/J-Dawe/starfinder-drag-ruler",
-    "manifest": "https://raw.githubusercontent.com/J-Dawe/starfinder-drag-ruler/main/module.json"
+    "manifest": "https://raw.githubusercontent.com/J-Dawe/starfinder-drag-ruler/main/module.json",
+    "download": "https://github.com/J-Dawe/starfinder-drag-ruler/archive/refs/heads/main.zip"
 }

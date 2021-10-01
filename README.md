@@ -2,7 +2,7 @@
 
 A FoundryVTT module that adds a speed provider to Drag Ruler for Starfinder.
 
-# Details
+## Details
 
 How Drag Ruler functions depends on the type of actor.
 

@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "author": "J. Dawe",
     "minimumCoreVersion": "0.8.9",
-    "compatibleCoreVersion": "0.8.9",
+    "compatibleCoreVersion": "9",
     "esmodules": [
         "scripts/main.js"
     ],

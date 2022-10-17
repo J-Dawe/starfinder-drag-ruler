@@ -1,22 +1,31 @@
 {
-    "name": "starfinder-drag-ruler",
+    "id": "starfinder-drag-ruler",
     "title": "Starfinder Drag Ruler Integration",
     "description": "Custom provider for Drag Ruler for slightly better compatibility with Starfinder.",
-    "version": "1.0.1",
-    "author": "J. Dawe",
-    "minimumCoreVersion": "0.8.9",
-    "compatibleCoreVersion": "9",
+    "version": "2.0.1",
+    "authors": [
+        {
+            "name": "J. Dawe"
+        }
+    ],
+    "compatibility": {
+        "minimum": "10",
+        "verified": "10"
+    },
     "esmodules": [
         "scripts/main.js"
     ],
-    "dependencies": [
-        {
-            "name": "drag-ruler",
+    "relationships": {
+        "systems": [{
+            "id": "sfrpg",
+            "type": "system"
+        }],
+        "requires": [{
+            "id": "drag-ruler",
             "type": "module"
-        }
-    ],
-    "systems": ["sfrpg"],
+        }]
+    },
     "url": "https://github.com/J-Dawe/starfinder-drag-ruler",
     "manifest": "https://raw.githubusercontent.com/J-Dawe/starfinder-drag-ruler/main/module.json",
-    "download": "https://github.com/J-Dawe/starfinder-drag-ruler/archive/1.0.2.zip"
+    "download": "https://github.com/J-Dawe/starfinder-drag-ruler/archive/2.0.1.zip"
 }

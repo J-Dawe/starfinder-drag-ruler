@@ -9,14 +9,14 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
         }
 
         getRanges(token) {
-            const actorType = token.actor.data.type;
+            const actorType = token.actor.type;
 
             if (actorType === "hazard") {
                 return [];
             }
 
             if (actorType === "starship") {
-                const baseSpeed = token.actor.data.data.attributes.speed.value;
+                const baseSpeed = token.actor.system.attributes.speed.value;
                 return [
                     {range: baseSpeed, color: "walk"},
                     {range: Math.floor(baseSpeed * 1.5), color: "dash"}
@@ -24,8 +24,8 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
             }
 
             if (actorType === "vehicle") {
-                const driveSpeed = parseFloat(token.actor.data.data.attributes.speed.drive);
-                const fullSpeed = parseFloat(token.actor.data.data.attributes.speed.full);
+                const driveSpeed = parseFloat(token.actor.system.attributes.speed.drive);
+                const fullSpeed = parseFloat(token.actor.system.attributes.speed.full);
                 return [
                     {range: driveSpeed, color: "walk"},
                     {range: driveSpeed * 2, color: "dash"},
@@ -33,8 +33,8 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
                 ];
             }
 
-            const mainMovement = token.actor.data.data.attributes.speed.mainMovement ?? "land";
-            const baseSpeed = token.actor.data.data.attributes.speed[mainMovement].value;
+            const mainMovement = token.actor.system.attributes.speed.mainMovement ?? "land";
+            const baseSpeed = token.actor.system.attributes.speed[mainMovement].value;
             return [
                 {range: baseSpeed, color: "walk"},
                 {range: baseSpeed * 2, color: "dash"},

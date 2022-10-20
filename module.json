@@ -2,7 +2,7 @@
     "name": "starfinder-drag-ruler",
     "title": "Starfinder Drag Ruler Integration",
     "description": "Custom provider for Drag Ruler for slightly better compatibility with Starfinder.",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "J. Dawe",
     "minimumCoreVersion": "0.8.9",
     "compatibleCoreVersion": "9",
